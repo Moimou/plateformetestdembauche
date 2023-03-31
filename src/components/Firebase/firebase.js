@@ -14,7 +14,7 @@ const config = {
 class Firebase{
     constructor(){
         app.initializeApp(config);
-        this.auth =  app.auth()
+        this.auth =  app.auth();
     }
 
     //inscription
@@ -24,7 +24,11 @@ class Firebase{
    loginUser= (email,password) =>this.auth.signInWithEmailAndPassword(email,password);
 
    //deconnexion
-   signoutUser = () =>this.auth.signOut;
+   signoutUser = () => this.auth.signOut();
+
+   // retrieve password
+   passwordReset = email => this.auth.sendPasswordResetEmail(email);
+   
 }
 
 

@@ -60,6 +60,8 @@ firebase.loginUser(email,password)
               </form>
               <div className='linkContainer'>
                 <Link className='simpleLink' to='/signup'>Nouveau sur ce site? Inscrivez vous</Link>
+                <br/>
+                <Link className='simpleLink' to='/forgetpassword'>Mot de passe oublié? Récupérez-le ici</Link>
               </div>
              </div>
              </div>
