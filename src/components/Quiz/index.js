@@ -1,9 +1,10 @@
-import React, {Component} from 'react'
+import React, {Component, Fragment} from 'react'
 import { QuizMarvel } from '../quizMarvel';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Levels from '../Levels';
 import ProgressBar from '../ProgressBar';
+import QuizOver from '../QuizOver';
 
 //toast.configure();
 
@@ -33,7 +34,8 @@ const initialState = {
     btnDisabled:true,
     userAnswer:null,
     showWelcomeMsg:false,
-    score:0
+    score:0,
+    quizEnd:false,
 }
 
 class Quiz extends Component {
@@ -71,9 +73,13 @@ class Quiz extends Component {
       userAnswer:selectedAnswer,
       btnDisabled:false
     })
-
   }
 
+  gameOver = () =>{
+    this.setState({
+      quizEnd:true, 
+    })
+  }
 
    showWelcomeMsg = pseudo => {
     if(!this.state.showWelcomeMsg){
@@ -101,7 +107,7 @@ class Quiz extends Component {
 
   nextQuestion = () => {
     if(this.state.idQuestion === this.state.maxQuestions-1){
-      //end
+      this.gameOver();
     } else{
       this.setState(prevState=>({
         idQuestion:prevState.idQuestion + 1
@@ -179,24 +185,31 @@ class Quiz extends Component {
                   onClick={()=>this.submitAnswer(option)}> {option} </p> )
      })
 
-
-    return (
-      <div>
-        {/* <h2>Pseudo: {pseudo}</h2>  */}
+     return !this.state.quizEnd ? (
+     <QuizOver/>
+     )
+     :
+     (
+     <Fragment>
+      {/* <h2>Pseudo: {pseudo}</h2>  */}
         <Levels/>
-        <ProgressBar/>
+        <ProgressBar 
+          idQuestion={this.state.idQuestion}
+          maxQuestions={this.state.maxQuestions}/>
         <h2>{this.state.question}</h2>
-            {displayOptions}
+         {displayOptions}
         <button 
-        className='btnSubmit' 
-        disabled={this.state.btnDisabled}
-        onClick={this.nextQuestion}>Suivant
-        </button>
-         <ToastContainer /> 
-
-       
-      </div> 
-    )
+          className='btnSubmit' 
+          disabled={this.state.btnDisabled}
+          onClick={this.nextQuestion}>
+            {this.state.idQuestion < this.state.maxQuestions - 1 ? "Suivant" : "Terminer"}
+       </button>
+      <ToastContainer />  
+      </Fragment> 
+      )
+    
+      
+    
   }
   }
  
