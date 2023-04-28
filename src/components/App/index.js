@@ -9,6 +9,7 @@ import Login from '../Login';
 import Signup from '../Signup';
 import ErrorPage from '../ErrorPage';
 import ForgetPassword from '../ForgetPassword';
+import {IconContext} from 'react-icons';
 
 class App extends Component {
 
@@ -16,19 +17,20 @@ class App extends Component {
 
     return (
       <Router>
-        <Header/>
+       <IconContext.Provider value={{ style:{verticalAlign:'middle'}}}> 
+          <Header/>
 
-        <Switch>
-          <Route exact path="/" component={Landing} />
-          <Route path="/welcome" component={Welcome} />
-          <Route path="/login" component={Login} />
-          <Route path="/signup" component={Signup} />
-          <Route path="/forgetpassword" component={ForgetPassword} />
-          <Route  component={ErrorPage} />
-        </Switch>
+          <Switch>
+            <Route exact path="/" component={Landing} />
+            <Route path="/welcome" component ={Welcome} />
+            <Route path="/login" component={Login} />
+            <Route path="/signup" component={Signup} />
+            <Route path="/forgetpassword" component={ForgetPassword} />
+            <Route  component={ErrorPage} />
+          </Switch>
 
-        <Footer/>
-       
+          <Footer/>
+        </IconContext.Provider>
       </Router>
     );
 
