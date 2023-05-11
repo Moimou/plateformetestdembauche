@@ -3,125 +3,125 @@ export const QuizMarvel = [
         fournisseur: "Donkey Geek (https://www.youtube.com/c/DonkeyGeek)",
         sujet: "Application Marvel Quiz pour apprentissage React JS",
         quizz: {
-            debutant: [
+            general: [
                 {
                     id: 0,
-                    question: "De quelle équipe fait partie Iceman?",
+                    question: "Comment s'appelle le Promoteur des COmplexes Santa Lucia ?",
                     options: [
-                        "The X-Men",
-                        "The Fantastic Four",
-                        "The Invaders",
-                        "The Liberators"
+                        "Timo Leopold",
+                        "Victor Fotso",
+                        "Kadji Defosso",
+                        "Monkam Pascal"
                     ],
-                    answer: "The X-Men",
+                    answer: "Timo Leopold",
                     heroId: 1009362
                 },
                 {
                     id: 1,
-                    question: "Dans les X-Men, quelle substance constitue le squelette de Wolverine ?",
+                    question: "Les Complexes Santa Lucia appartiennent à quel groupe ?",
                     options: [
-                        "Cavorite",
-                        "Vibranium",
-                        "Adamantium",
-                        "Neutronium"
+                        "Castel",
+                        "Vignes Rouges",
+                        "TAL Investment Group",
+                        "Decage"
                     ],
-                    answer: "Adamantium",
+                    answer: "TAL Investment Group",
                     heroId: 1009718
                 },
                 {
                     id: 2,
-                    question: "Quel est le nom de Spider-Man, apparu pour la première fois en 1962 ?",
+                    question: "Combien de Supermarchés comptent le Complexe Santa Lucia à Douala ?",
                     options: [
-                        "Tom Parker",
-                        "John Parker",
-                        "Peter Parker",
-                        "Alan Parker"
+                        "7",
+                        "10",
+                        "5",
+                        "2"
                     ],
-                    answer: "Peter Parker",
+                    answer: "5",
                     heroId: 1009610
                 },
                 {
                     id: 3,
-                    question: "Comment s'appelait Wolverine quand il était cavalier d'Apocalypse?",
+                    question: "Combien de Supermarchés comptent le Complexe Santa Lucia à Yaounde?",
                     options: [
-                        "Rage",
-                        "Death",
-                        "Destruction",
-                        "Oblivion"
+                        "5",
+                        "9",
+                        "2",
+                        "15"
                     ],
-                    answer: "Death",
+                    answer: "9",
                     heroId: 1009718
                 },
                 {
                     id: 4,
-                    question: "Quel super-héros ne se sépare jamais de son marteau forgé par les nains ?",
+                    question: "Quelles sont les horaires d'ouverture et de fermeture des supermarchés santa lucia?",
                     options: [
-                        "Bizarro",
-                        "Flash",
-                        "Venom",
-                        "Thor"
+                        "8h-20h",
+                        "6h-18h",
+                        "4h-16h",
+                        "24h/7j"
                     ],
-                    answer: "Thor",
+                    answer: "24h/7j",
                     heroId: 1009664
                 },
                 {
                     id: 5,
-                    question: "Quelle couleur est associée à Hulk ?",
+                    question: "Combien coûte le pain le moins cher dans les supermarchés Santa Lucia ?",
                     options: [
-                        "Le jaune",
-                        "Le rouge",
-                        "Le vert",
-                        "Le bleu"
+                        "250 FCFA",
+                        "100 FCFA",
+                        "50 FCFA",
+                        "25 FCFA"
                     ],
-                    answer: "Le vert",
+                    answer: "50 FCFA",
                     heroId: 1009351
                 },
                 {
                     id: 6,
-                    question: "Quel super-héros ressemble à un être de pierre ?",
+                    question: "Combien coûte le gateau d'anniversaire le moins cher à Santa Lucia ?",
                     options: [
-                        "Plastic Man",
-                        "The Thing",
-                        "Hawkman",
-                        "Superboy"
+                        "15.000 FCFA",
+                        "5.000 FCFA",
+                        "10.000 FCFA",
+                        "8.000 FCFA"
                     ],
-                    answer: "The Thing",
+                    answer: "5.000 FCFA",
                     heroId: 1009662
                 },
                 {
                     id: 7,
-                    question: "De qui Edwin Jarvis est-il le majordome?",
+                    question: "En quelle année a été crée le premier supermarché des complexes Santa Lucia ?",
                     options: [
-                        "Bruce Wayne",
-                        "Charles Xavier",
-                        "Tony Stark",
-                        "Henry Steven"
+                        "2022",
+                        "2008",
+                        "2006",
+                        "1999"
                     ],
-                    answer: "Tony Stark",
+                    answer: "2006",
                     heroId: 1009368
                 },
                 {
                     id: 8,
-                    question: "Quel super-héros porte un costume inspiré du drapeau américain ?",
+                    question: "Où se trouve la Direction Générale des Complexes Santa Lucia à Douala ?",
                     options: [
-                        "Tigra",
-                        "Blade",
-                        "Iron Man",
-                        "Captain America"
+                        "Bonamoussadi",
+                        "Cité-Cicam",
+                        "Bonabéri",
+                        "Akwa-Nord"
                     ],
-                    answer: "Captain America",
+                    answer: "Akwa-Nord",
                     heroId: 1009220
                 },
                 {
                     id: 9,
-                    question: "Y compris ses pouces, combien de doigts sur les deux mains possède The Thing?",
+                    question: "Où se trouve la Direction Générale des Complexes Santa Lucia à Yaoundé ?",
                     options: [
-                        8,
-                        6,
-                        10,
-                        4
+                        "Mokolo",
+                        "Ngousso",
+                        "Ahala",
+                        "Mvan"
                     ],
-                    answer: 8,
+                    answer: "Mokolo",
                     heroId: 1009662
                 }
             ],

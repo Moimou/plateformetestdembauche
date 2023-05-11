@@ -2,7 +2,7 @@ import React, {useState, useEffect, Fragment, useContext} from 'react'
 import {FirebaseContext} from '../Firebase'
 import Logout from '../Logout'
 import Quiz from '../Quiz'
-
+import Loader from '../Loader'
 
 const Welcome = (props) => {
 
@@ -39,10 +39,9 @@ const Welcome = (props) => {
  },[userSession, firebase, props.history])
   
   return userSession === null ? (
-    <Fragment>
-      <div className='loader'></div>
-      <p className='loaderText' >Loading...</p>
-    </Fragment>
+    <Loader
+    loadingMsg={"Authentification"}
+    styling={{textAlign: 'center', color: '#FFFFFF'}}/>
   ):( 
   <div className='quiz-bg'>
     <div className='container'>

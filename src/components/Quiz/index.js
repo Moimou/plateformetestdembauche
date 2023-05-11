@@ -24,7 +24,7 @@ const initialState = {
     percent:null
 }
 
- const levelNames = ["debutant","confirme","expert"];
+ const levelNames = ["general","confirme","expert"];
 
 class Quiz extends Component {
 

@@ -115,7 +115,7 @@ main {
 
 /* WELCOME PAGE */
 .welcomePage {
-  background-color: var(--pink-color);
+  background-color: rgba(249, 66, 184, 0.6);  /*var(--pink-color);*/
   background-image: url(images/entet-sl.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -236,7 +236,7 @@ footer {
 
 .formBoxLeftSignup {
   min-height: 500px;
-  background-image: url(images/ironman.png);
+  background-image: url(images/chocojoy512.png);
   background-repeat: no-repeat;
   background-position: center center;
   flex: 0 1 50%;
@@ -244,7 +244,7 @@ footer {
 
 .formBoxLeftLogin {
   min-height: 500px;
-  background-image: url(images/spiderman.png);
+  background-image: url(images/chipsfiesta512.png);
   background-repeat: no-repeat;
   background-position: center center;
   flex: 0 1 50%;
@@ -252,7 +252,7 @@ footer {
 
 .formBoxLeftForget {
   min-height: 500px;
-  background-image: url(images/deadpool.png);
+  background-image: url(images/Savonjojo512.png);
   background-repeat: no-repeat;
   background-position: center center;
   flex: 0 1 50%;
@@ -519,7 +519,7 @@ input:checked+.slider:before {
   height: 18px;
   text-align: center;
   border-radius: 5px;
-  background: var(--red-color);
+  background: var(--pink-color);
 }
 /* END PROGRESS BAR */
 
@@ -538,7 +538,7 @@ input:checked+.slider:before {
 }
 
 .answerOptions:hover {
-  background-color: var(--red-color);
+  background-color: var(--blue-color);
   -webkit-box-shadow: 0px 4px 16px -5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 16px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 4px 16px -5px rgba(0, 0, 0, 0.75);
@@ -633,7 +633,7 @@ input:checked+.slider:before {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: var(--red-color);
+  background-color: var(--blue-color);
   color: var(--white-color);
   text-transform: uppercase;
 }
@@ -662,9 +662,9 @@ input:checked+.slider:before {
 .btnSubmit {
   font-size: 16px;
   padding: 6px;
-  background-color: var(--red-color);
+  background-color: var(--pink-color);
   color: var(--white-color);
-  border-color: var(--red-color);
+  border-color: var(--pink-color);
   border-radius: 5px;
   width: 150px;
   display: block;
@@ -673,7 +673,7 @@ input:checked+.slider:before {
 }
 
 .selected {
-  background-color: var(--red-color);
+  background-color: var(--blue-color);
   color: var(--white-color);
   text-transform: uppercase;
 }

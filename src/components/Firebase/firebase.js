@@ -4,12 +4,12 @@ import 'firebase/firestore';
 
 
 const config = {
-    apiKey: "AIzaSyBc5fAVuUSRzB5LWRrFrzOmmAHwStY6eUI",
-    authDomain: "sltest-project.firebaseapp.com",
-    projectId: "sltest-project",
-    storageBucket: "sltest-project.appspot.com",
-    messagingSenderId: "819896195066",
-    appId: "1:819896195066:web:c11039eb0bd693e466f643"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY ,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID
   };
 
 class Firebase{

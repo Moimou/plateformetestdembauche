@@ -85,7 +85,7 @@ const QuizOver = React.forwardRef((props,ref) => {
             <tr key={question.id}>
                         <td>{question.question}</td>
                         <td>{question.answer}</td>
-                        <td> <button className='btnInfo'>Infos</button></td>
+                        {/* <td> <button className='btnInfo'>Infos</button></td> */}
                     </tr>
                     )
         })
@@ -119,7 +119,7 @@ const QuizOver = React.forwardRef((props,ref) => {
                 <tr>
                     <th>Question</th>
                     <th>Réponses</th>
-                    <th>Infos</th>
+                    {/* <th>Infos</th> */}
                 </tr>
             </thead>
             <tbody>
